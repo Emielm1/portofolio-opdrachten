@@ -1,0 +1,49 @@
+body {
+	background-color: #aaaadd;
+}
+.mx-auto{
+
+}
+
+.brillen {
+    color: #2c3e50 !important;
+    width: 100%;
+}
+.brillen:hover {
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body a {
+        text-align: center;
+        font-size: 30%;
+        width: 200%;
+
+
+    }
+    @media screen and (max-width: 600px) {
+        .productitem img {
+            width: 300%;
+
+
+
+
+        }
+}
+@media only screen and (min-width: 600px) {
+
+    / For tablets: /
+
+}
+@media only screen and (max-width: 800px) {
+    body a {
+        text-align: center;
+        font-size: 30%;
+        wdith: 200%;
+
+
+    }
