@@ -1,0 +1,120 @@
+@font-face {    font-family: rocmn_font;    src: url("../font/waltographUI.ttf"); } 
+* {
+  box-sizing: border-box; 
+}
+
+/*************************
+ * Start a new row       *
+ *************************/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ 
+body { 
+  width: 100%; 
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 100%;
+  background-image: url("../img/ok.png");
+  background-repeat: repeat-y;
+  font-family: 'rocmn_font', 'Calibri', 'Arial', 'Helvetica'; 
+  color: black;
+}
+
+/*************************
+ * Mobile first          *
+ *************************/
+h1 {
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: rocmn_font;
+  text-align: center;
+  color: white;
+  background-color: darkblue;
+  margin-bottom: 30px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.00em;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#menu { /* Container to position menu and submenu buttons */
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#menu_01 {
+	background-color: green;
+	border-radius: 0px 25px 0px 0px;
+}
+
+#submenu_01 { /* Container to position submenu buttons (shown by default) */
+	position: static;
+    display: none;
+	 box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+.submenu {
+  border-radius: 0px;
+  background-color: lightgreen; 
+}
+.submenu:hover {
+  background-color: darkgreen;
+}
+
+#output_exercise_01 {
+  display: none;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 5px;
+  border-radius: 0px 0px 25px 0px; 
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+  background-color: #D7EBFA;
+  padding: 5px;
+  font-size: 1.0em;
+  font-family: 'Calibri', 'Arial', 'Helvetica';
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+}
+.btnsubmit  {
+	background-color: #63B1E5;
+    text-align: center;	
+}
+#result {
+	text-align: center;
+	font-size: 150%;
+}
+#output_exercise_02 {
+  display: none;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 5px;
+  border-radius: 0px 0px 25px 0px; 
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+  background-color: #D7EBFA;
+  padding: 5px;
+  font-size: 1.0em;
+  font-family: 'Calibri', 'Arial', 'Helvetica';
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+}
+
+
+
+
+
+ 
+ 

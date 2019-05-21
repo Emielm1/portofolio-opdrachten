@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>ROCMN programmeren P03</title>
+	<script src="javascript/rekenen.js"> </script>
+	<script src="javascript/leeftijd.js"> </script>
+	<script src="javascript/dobbelen.js"> </script>
+  </head> 
+
+  <body>
+
+    <header>
+      <h1>Responsive and javascript</h1>
+    </header>
+
+    <!-- BOR_01 -->
+
+ <div class="row"> 
+   
+    <nav id="menu">
+        <button onclick="toggleSubMenu()" id="menu_01">Opdrachten P03</button>
+        <div id="submenu_01" >
+    <button onclick="showExercise(this.id)" class="submenu" id="exercise_01">Opdracht 01 Rekenen</button>
+    <button onclick="showExercise(this.id)" class="submenu" id="exercise_02">Opdracht 02 datum</button>
+    <button onclick="showExercise(this.id)" class="submenu" id="exercise_03">Opdracht 03</button>
+        </div>
+   </nav>
+   
+      <div id="output_exercise_01">
+     Opdracht 01 Rekenen
+  
+  <fieldset>
+    <legend>Numbers</legend>
+          01:<input id="myNumber_01" type="text" name="firstname">
+    <br>
+          02:<input id="myNumber_02" type="text" name="lastname">
+  </fieldset>
+        
+  <fieldset>
+    <legend> Calculate</legend>
+    <input type="radio" name="calc" value="plus"> Plus<br>
+    <input type="radio" name="calc" value="minus"> Minus<br>
+    <input type="radio" name="calc" value="multi"> Multiply<br>
+    <input type="radio" name="calc" value="divide"> Devide<br>
+  </fieldset>
+  <div id="result"> </div> <br>
+  <button onclick="calculate()" class="btnsubmit">Submit</button>
+      </div> 
+   
+   
+    </div> 
+	
+	   <div id="output_exercise_02">
+     Opdracht 02 Leeftijd
+  
+  <fieldset>
+    <legend> geboorte datum</legend>
+   dag:      <input type="text" name="datum" value="dag"> <br>
+   maand:    <input type="text" name="datum" value="maand"> <br>
+   jaar:     <input type="text" name="datum" value="jaar" id="jaary"> <br>
+
+  </fieldset>
+  <div id="result"> </div> <br>
+  <button onclick="age()" class="btnsubmit">Submit</button>
+      </div> 
+   
+   
+    </div> 
+ <!-- EOR_01 -->
+ <script>
+ 
+   var isDropped = false;
+ 
+     function toggleSubMenu() {
+       isDropped = !isDropped;
+         if (isDropped == false) document.getElementById("submenu_01").style.display = "none";
+           else        document.getElementById("submenu_01").style.display = "block";
+    }
+
+     function closeAllExercise() {
+       document.getElementById("output_exercise_01").style.display = "none";
+	   document.getElementById("output_exercise_02").style.display = "none";
+  }
+  
+  function showExercise(exercise) {
+    closeAllExercise();
+  
+  switch (exercise) {
+  
+  case "exercise_01":
+  document.getElementById("output_exercise_01").style.display = "block";
+  break;
+    case "exercise_02":
+  document.getElementById("output_exercise_02").style.display = "block";
+  break;
+  }
+  }
+
+ </script>
+  </body>
+</html>
