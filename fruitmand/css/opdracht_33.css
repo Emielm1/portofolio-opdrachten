@@ -1,0 +1,70 @@
+body {
+ font-family: 'Calibri';
+}
+
+button {
+
+	color: white;
+	font-size: 250%;
+	margin: 15px;
+	border-radius: 10px;
+	
+}
+#selected {
+
+	border: solid 2px blue;
+	width: 35%;
+	text-align: center;
+	border-radius: 20px;
+	height: 200px;
+    overflow: hidden;
+}
+
+#inhoud {
+	border: solid 3px blue;
+	border-radius: 15px;
+	font-size: 300%;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.navigatie {
+	background-color: blue;
+	border: solid 3px darkblue;
+	width: 8%;
+	
+}
+.sortering {
+	background-color: purple;
+	border: solid 3px #301934;
+    float: right;
+	width: 14%;
+}
+.edit {
+	background-color: green;
+	border: solid 3px darkgreen;
+	width: 10%;
+}
+.navigatie:hover {
+	background-color: darkblue;
+
+}
+.sortering:hover {
+	background-color: #301934;
+
+}
+.edit:hover {
+	background-color: darkgreen;
+}
+h1 {
+	font-size: 500%;
+	text-align: center;
+	
+}
+#ctr {
+	position: absolute;
+	left: 300px;
+    right: -1000px;
+	font-size: 800%;
+	top: 370px;
+}

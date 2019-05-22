@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Class:    4A7B
+  Name: E.Middeldorp
+  Purpose: sort fruit layout webpagina
+
+  mm-dd-yyyy Description
+  ----------  -----------------------------------
+  24-10-2017
+-->
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/opdracht_33.css">
+  <title>Fruitmand</title>
+  </head>
+  <h1> fruitmand</h1>
+  <nav>
+  <p id="inhoud">[komma seperated string inhoud fruit array]</p>
+  <button class="navigatie" id="first" onclick="navigatie(this.id);"> first   </button>
+  <button class="navigatie" id="prev" onclick="navigatie(this.id);"> prev   </button>
+  <button class="navigatie" id="next" onclick="navigatie(this.id);"> next   </button>
+  <button class="navigatie" id="last" onclick="navigatie(this.id);"> last   </button>
+  
+  <button class="sortering" id="asc" onclick="sort(this.id);">sort asc   </button>
+  <button class="sortering" id="desc" onclick="sort(this.id);">sort desc   </button>
+  <br><br><br><br>
+  <button class="edit" id="add" onclick="add();"> add   </button>
+  <br>
+  <button class="edit" id="del" onclick="del();"> del    </button>
+  <br>
+  <button class="edit" id="search" onclick="search();"> search</button>
+  <div id="ctr">
+  <p id="selected">[selected fruit]</p>
+  </div>
+  </nav>
+  <body> 
+    <script>
+ var fruits = ["appel","sinasappel","druiven"];
+ var allfruit  = [];
+ var sellindex = 0;
+ 
+ allfruit = fruits.concat(allfruit);
+ 
+ function updatefruit()  {
+   document.getElementById("inhoud").innerHTML = allfruit;
+   document.getElementById("selected").innerHTML = allfruit[sellindex];
+    }
+	function updatefruit1()  {
+   document.getElementById("inhoud").innerHTML = allfruit;
+   }
+    updatefruit();
+ 
+    function navigatie(id) {
+ switch (id) {
+   case "first":
+   sellindex = 0;
+   break;
+   
+   case "next":
+   sellindex++;
+   if (sellindex == allfruit.length)  {
+   sellindex--;
+   }
+   break;
+   
+   case "prev":
+   sellindex--;  
+   if (sellindex == -1)  {
+   sellindex++;
+   }
+   break;
+   
+   case "last":
+   sellindex = (allfruit.length - 1);
+   break;
+    }
+ 
+   updatefruit();
+ }
+   
+       function sort(sortId) {
+	   
+	    var sortndx = allfruit[sellindex]
+ 
+  switch (sortId) {
+    case "asc":
+    allfruit.sort(function(a, b){
+    return a.toLowerCase().localeCompare(b.toLowerCase())});
+    updatefruit();
+    sellindex = allfruit.indexOf(sortndx);
+    updatefruit();
+    break;
+   
+       case "desc":
+      allfruit.sort(function(b, a){
+       return a.toLowerCase().localeCompare(b.toLowerCase())});
+    updatefruit();
+    sellindex = allfruit.indexOf(sortndx);
+    updatefruit();
+    break;
+    } 
+  }
+  
+  function add() {
+  var newfruit = prompt("Welk fruit zoek je?");
+  allfruit.splice(sellindex, 0, newfruit);
+  updatefruit();
+  }
+
+  
+  function del() { 
+  allfruit.splice(sellindex, 1);
+  updatefruit();
+  
+  }
+  function search() {
+  
+  }
+   function search() {
+    var searchfruit = prompt("Welke fruit zoek je")
+ var myindex = allfruit.indexOf(searchfruit)
+ if (myindex < 0)  {
+ 
+ alert(searchfruit + "is niet aanwezig")
+ return;
+ }
+ sellindex = myindex;
+ updatefruit();
+  }
+    </script>
+  </body>
+  
+  </html>
