@@ -1,0 +1,36 @@
+body {
+	background-color: #aaaadd;
+}
+.mx-auto{
+	box-shadow: 0 32px 68px 0 rgba(0, 0, 0, 0.9), 0 48px 160px 0 rgba(0, 0, 0, 1000);
+}
+
+#horror {
+
+}
+#drama {
+
+}
+#actie {
+	
+}
+#comedy {
+
+}
+
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-cloned{
+	margin-right: 0px !important;
+}
+
+/ For mobile phones: /
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    / For tablets: /
+   
+}
+@media only screen and (min-width: 768px) {
+    / For desktop: /

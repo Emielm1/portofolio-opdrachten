@@ -1,0 +1,26 @@
+
+}
+.shadow   {
+	box-shadow: 0 32px 68px 0 rgba(0, 0, 0, 0.9), 0 48px 160px 0 rgba(0, 0, 0, 1000);
+}
+
+.nav-linkk {
+  color: #fff;
+  padding: 0;
+}
+
+.col1 {
+  padding-left: 15px;
+  position: relative;
+}
+
+.col2 {
+  padding-left: 15px;
+}
+
+.rev {
+  text-align: justify;
+  width: 50%;
+  padding-left: 5em;
+  padding-top: 2em;
+}
