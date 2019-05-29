@@ -1,0 +1,126 @@
+#footer {
+  background-color: red; /* kleur voor de footer */
+  width: 100%;
+  bottom: 2.525em;
+  left: 0;
+  color: #fff;          /* tekstkleur */
+  display: inline;
+  font-family: sans-serif;
+}
+#mooi {
+	border: 50px 50px 50px 50px solid #D8D3CB;
+}
+#footer3 {
+  background-color: gray; /* kleur voor de footer */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;          /* tekstkleur */
+  font-family: sans-serif;
+  height: 2.5em;
+  display: inline-block;
+}
+
+#info {
+  float:left;
+  width: 25%;
+  text-align: left;
+}
+
+#social {
+  float:left;
+  width: 25%;
+  text-align: left;
+}
+
+#films {
+  float:left;
+  width: 25%;
+  text-align: left;
+}
+
+#contact {
+  float:left;
+  width: 25%;
+  text-align: left;
+}
+
+.ftitel {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.footer2 {
+  padding: 5em;
+  height: 1em;
+}
+
+#social2 {
+  padding-top: 5em;
+}
+
+#copyright {
+  margin-left: 9em;
+  margin-top: 0.7em;
+  display: inline-block;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: blue; /* kleur knop */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: yellow; /* kleur knop als muis er op zit */
+}
+
+table {
+  width: 100%;
+  height: 400px;
+}
+
+td {
+  width: 50%;
+}
+
+.fposter {
+  height: 12.3em;
+}
